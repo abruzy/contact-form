@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400;700&display=swap');
 
 * {
   padding: 0;
@@ -24,7 +24,7 @@ header {
 }
 
 #logo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -69,7 +69,7 @@ main {
 .intro-greet,
 .about-me h2 {
   color: #ff6b00;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -78,7 +78,7 @@ main {
 }
 
 .intro-me {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -88,7 +88,7 @@ main {
 }
 
 .intro-text {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -131,7 +131,7 @@ main {
 }
 
 .projects h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -163,7 +163,7 @@ main {
 
 .description,
 .white-description {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -198,7 +198,7 @@ main {
 
 li {
   list-style: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -215,7 +215,7 @@ li {
 }
 
 .card h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -224,19 +224,19 @@ li {
 }
 
 .gtime {
-  background-image: url("../media/png/gtime.png");
+  background-image: url('../media/png/gtime.png');
 }
 
 .weather {
-  background-image: url("../media/png/weather.png");
+  background-image: url('../media/png/weather.png');
 }
 
 .conference {
-  background-image: url("../media/png/conference.png");
+  background-image: url('../media/png/conference.png');
 }
 
 .katchy {
-  background-image: url("../media/png/katchy.png");
+  background-image: url('../media/png/katchy.png');
 }
 
 .project-stacks {
@@ -270,7 +270,7 @@ li {
 }
 
 .about-me-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -285,7 +285,7 @@ li {
   justify-content: center;
   padding: 12px;
   background: #ff6b00;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -307,7 +307,7 @@ li {
 }
 
 .list-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -315,13 +315,85 @@ li {
 }
 
 .languages {
-  list-style: inside url("../media/svg/rectangle.svg");
+  list-style: inside url('../media/svg/rectangle.svg');
 }
 
 .frameworks {
-  list-style: inside url("../media/svg/square.svg");
+  list-style: inside url('../media/svg/square.svg');
 }
 
 .skills {
-  list-style: inside url("../media/svg/circle.svg");
+  list-style: inside url('../media/svg/circle.svg');
+}
+
+/*** Contact Form ***/
+
+.contact {
+  padding: 5rem 2rem;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.contact-message {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #262626;
+  font-family: 'Inter', sans-serif;
+}
+
+.name-field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  color: #979493;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.textarea-field {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border: none;
+  background: #fbf8f7;
+}
+
+button {
+  background: #f55800;
+  padding: 1rem 0.75rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
